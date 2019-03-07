@@ -1,4 +1,7 @@
 CleanData <- function(){
+  # Read in the data
+  d <- data.table::fread(file.path(org::PROJ$DATA_RAW,"data.csv"))
+
   # look at our data
   xtabs(~d$age)
   xtabs(~d$Kontaktype)

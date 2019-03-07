@@ -30,9 +30,6 @@ file.path(org::PROJ$DATA_RAW,"data.csv")
 library(data.table)
 library(ggplot2)
 
-# Read in the data
-d <- data.table::fread(file.path(org::PROJ$DATA_RAW,"data.csv"))
-
 ##############################
 # START DATA CLEANING
 ##############################
