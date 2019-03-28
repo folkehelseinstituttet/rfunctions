@@ -125,7 +125,7 @@ d_weekly <- d[
   keyby=.(
     municip,
     age,
-    week_year
+    year_week
   )
   ]
 d_weekly
