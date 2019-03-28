@@ -81,6 +81,26 @@ d[, num_consults_per_year_age := sum(consult), by = .(year,age)]
 d
 
 ##############################
+# ALWAYS <- copy(d)
+##############################
+
+# WITHOUT COPY
+a <- data.table(x=1:3,y=3:5)
+b <- a
+b[,z:=10:12]
+
+a
+b
+
+# WITH COPY
+a <- data.table(x=1:3,y=3:5)
+b <- copy(a)
+b[,z:=10:12]
+
+a
+b
+
+##############################
 # SUMMARIZING/AGGREGATING DATA
 ##############################
 
